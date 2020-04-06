@@ -1,0 +1,26 @@
+p{
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    clear : both;
+}
+
+h1{
+    padding-top: 2%;
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    color: thistle;
+    font-size: larger;
+    clear : both;
+}
+
+h2{
+    padding-bottom: 2%;
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: large;
+    color:sandybrown;
+    clear : both;
+
+}
