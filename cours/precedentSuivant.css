@@ -1,0 +1,17 @@
+#contenuPrecSuiv{
+    clear: both;
+    font:24px arial;
+    padding : 2%;
+}
+ 
+#precedent{   
+
+    float:left;
+    
+}
+ 
+#suivant{
+
+    float:right;
+
+}

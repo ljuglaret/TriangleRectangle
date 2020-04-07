@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="gaucheDroite.css" />
+    <link rel="stylesheet" href="precedentSuivant.css" />
+
 
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -14,7 +16,7 @@
 
 <body>
 <h2>
-  Théorème
+  Théorème de Pythagore
 </h2>
 
 <p>
@@ -23,7 +25,7 @@
 
 <center ><img style ="width: 35%;" src="image-resources/triRectSuite3.png"></center>
 
-<p>Demonstration</p>
+<h3>Première méthode</h3>
   
 
 <p style="float: left; ">
@@ -43,57 +45,105 @@
 
 </p>
 
-<p style="float: left;">
 
-  le point C est l'opposé du point A par la symétrie de centre O
+<p >
+  Donc<br>
+  $\begin{align*}
+  AB^{2}+BC^{2} &= (x_B-x_A)^2 + (y_B-y_A)^2 + (x_C-x_B)^2 + (y_C-y_B)^2\\
+  \Longrightarrow \ AB^{2} \ +\ BC^{2} &=(x_B-x_O+x_O-x_A)^2 + (y_B-x_O+x_O-y_A)^2 + (x_C-x_O+x_O-x_B)^2 + (y_C-y_O+y_O-y_B)^2\\
+  \Longrightarrow \ AB^{2} \ +\ BC^{2} &=(x_B-x_O)^2+(x_O-x_A)^2 + (y_B-y_O)^2+(y_O-y_A)^2 \\
+  &+ (x_C-x_O)^2+(x_O-x_B)^2 + (y_C-y_O)^2+(y_O-y_B)^2\\
+  &+ 2*(x_B-x_O)*(x_O-x_A)+2*(y_B-y_O)*(y_O-y_A)+ 2*(x_C-x_O)*(x_O-x_B)+2*(y_C-y_O)*(y_O-y_B)\\
   
-$
- \left\{
- \begin{array}{l}
-  x_C=-x_A\\
-  y_C=-y_A
-  \end{array}
-  \right\}
+  \Longrightarrow \ AB^{2} \ +\ BC^{2} &=(x_B-x_O)^2+(y_B-y_O)^2+(x_O-x_A)^2 +(y_O-y_A)^2 \\
+  &+ (x_C-x_O)^2+  (y_C-y_O)^2+(x_O-x_B)^2+(y_O-y_B)^2\\
+  &+ 2*(x_B-x_O)*((x_O-x_A)+*(x_O-x_C)) + 2*(y_B-y_O)*(y_O-y_A+y_O-y_C)\\
+ 
+  \Longrightarrow \ AB^{2} \ +\ BC^{2} &=r^2+r^2 +r^2 + r^2\\
+  &+ 2*(x_B-x_O)*(2*x_O-x_A-x_C) + 2*(y_B-y_O)*(2*y_O-y_A-y_C)\\
+\end{align*}$
+</p>
+  <p>
+
+    Le point C est l'opposé du point A par la symétrie de centre O
+    
   
- $  
+    $
+   \left\{
+   \begin{array}{l}
+    \frac{x_A+x_C}{2}=x_O\\
+    \frac{y_A+y_C}{2}=y_O\\
+      \end{array}
+    \right\}
+    
+   
+   \Longrightarrow 
+   \left\{
+    \begin{array}{l}
+     2*x_O=x_C+x_A\\
+     2*y_O=y_C+y_A\\
+       \end{array}
+     \right\} $  
+  </p>
+  
+  <p>
+    $\begin{align*}
+  \Longrightarrow \ AB^{2} \ +\ BC^{2} &=r^2+r^2 +r^2 + r^2\\
+  &+ 2*(x_B-x_O)*0 + 2*(y_B-y_O)*0\\
 
-
+  \Longrightarrow \ AB^{2} \ +\ BC^{2} &=4*r^2+r^2 +r^2 + r^2=BC^2
+  &\end{align*}$
 </p>
 
-<p style="float: left;">
-Donc
-  
-$$\begin{align*}
-  &BC^{2} =( -x_{A} \ -\ x_{B} \ )^{2} \ +\ ( -y_{A} -y_{B})^{2}\\
-  &\Longrightarrow \ BC^{2} =( -1*( x_{A} \ +\ x_{B})) \ ^{2} \ +\ \ ( -1\ *\ ( y_{A} \ +\ y_{B}))^{2}\\
-  &\Longrightarrow \ BC^{2} =( -1)^{2} \ *\ ( x_{A} \ +\ x_{B})^{2} \ +\ ( -1)^{2} \ *\ ( y_{A} \ +\ y_{B})^{2}\\
-  &\Longrightarrow \ BC^{2} =\ ( x_{A} \ +\ x_{B})^{2} \ +\ ( y_{A} \ +\ y_{B})^{2}\\
-  &\end{align*}$$  
-</p>
-<p style="float: left;">
-  Donc
-  $$\begin{align*}
-  &AB^{2} \ +\ BC^{2} =( x_{B} \ -x_{A})^{2} \ +\ ( y_{B} -y_{A})^{2} +\ ( x_{A} \ +\ x_{B})^{2} \ +\ ( y_{A} \ +\ y_{B})^{2}\\
-  &\Longrightarrow \ AB^{2} \ +\ BC^{2} =x_{B}^{2} \ -2*x_{A} *x_{B} +\ x_{A}^{2} \ +y_{B}^{2} \ -2*y_{A} *y_{B} +\ y_{A}^{2}\\
-  &\Longrightarrow \ AB^{2} \ +\ BC^{2} =\ x^{2}_{A} \ +\ 2*x_{A} *x_{B} +\ x_{B}^{2} \ +y_{A}^{2} \ +2*y_{A} *y_{B} +\ y_{B}^{2}\\
-  &\Longrightarrow AB^{2} +\ BC^{2} =\ x_{B}^{2} +x_{A}^{2} \ +y_{B}^{2} +\ y_{A}^{2} +\ x^{2}_{A} \ +\ x_{B}^{2} \ +y_{A}^{2} +\ y_{B}^{2}\\
-  &\Longrightarrow AB^{2} +\ BC^{2} =\ 2*\left( x_{B}^{2} +x_{A}^{2}\right) \ +\ 2*\left( y_{B}^{2} +\ y_{A}^{2}\right)\\
-  &\Longrightarrow AB^{2} +\ BC^{2} =\ 2*\left(( x_{B} \ -x_{O})^{2} +( x_{A} \ -x_{O})^{2}\right) \ +\ 2*\left(( y_{B} \ -y_{O})^{2} +( y_{A} \ -y_{O})^{2}\right)\\
-  &\Longrightarrow AB^{2} +\ BC^{2} =\ 2*\left(( x_{B} \ -x_{O})^{2} \ +( y_{B} \ -y_{O})^{2}\right) +2*\left(( x_{A} \ -x_{O})^{2} \ +\ ( y_{B} \ -y_{O})^{2}\right)
-   &\end{align*}$$  
+<h3>
+  Deuxième méthode
+</h3>
 
-
+<center ><img style ="width: 35%;" src="image-resources/demoPythagoreGeo.png"></center>
+<p>
+L'aire du carré ABCD est :
+$\begin{align*}
+(a+b)^2
+&\end{align*}$
 </p>
 
+<p>
+  L'aire des triangles AEH, BEF, CFG, DGH, rescpectivement rectangles en A, B, C, D, est :
+  $\begin{align*}
+frac{a*b} {2}
+&\end{align*}$
+  </p>
 
-<div>
-  <div style= "padding-left: 2%;  float:left; clear: both;">
-    <font size="6" face="verdana" color="blue">
+  <p>
+    Donc l'aire du carré EFGH est : 
+    $\begin{align*}
+(a+b)^2 - 4*\frac{a*b} {2} = a^2+2*a*b+b^2-2*a*b=a^2+b^2
+
+&\end{align*}$
+  </p>
+
+  <p>
+    Donc     $\begin{align*}
+    c = \sqrt{a^2+b^2}
+    &\end{align*}$
+  </p>
+
+  <p>
+    Donc     $\begin{align*}
+    c^2 = a^2+b^2
+    &\end{align*}$
+  </p>
+
+  <p>
+    Donc dans un triangle rectangle le carré de l'hypoténuse est égale à la somme des carrés des deux autres côtés.
+  </p>
+
+<div id= "contenuPrecSuiv">
+  <div id="precedent">
+   
       <a href=suite1.html style = "color:violet;">Précédent</a>
     </font>
   </div>
-  
-  
   
   </div>
 

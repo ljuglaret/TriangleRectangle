@@ -1,48 +1,76 @@
-<!doctype html><html style="overflow:auto;height:auto;width:auto;">
-<head><title>TriRectEtCercle2</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="stylesheet" type="text/css" href="general.css" /> 
-</head>
+<!DOCTYPE html>
 
-<body>
+<html>
 
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="general.css" />
+        <link rel="stylesheet" href="gaucheDroite.css" />
+        <link rel="stylesheet" href="precedentSuivant.css" />
 
-<h2>Réciproque 1</h2> 
- 
-<p> Si un triangle est rectangle, alors son hypoténuse est un diamètre de son cercle circonscrit.</p>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+          </script>        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+   </head>
 
+    <body>
 
- 
-<center><img style = "width : 50%; padding : 2% ;" src="image-resources/suite1.png"> </center>
-
+<h2>
+  Théorème Réciproque
+</h2>
 <p>
-Le triangle ABD est rectangle en A, et le triangle IBD est rectangle en I.
-<br>
-Donc ABID est un rectangle.
-<br>
-Donc les diagonales[DB] et [AI] se coupent en leur milieu O.
-<br>
-Donc OD = OA = OB = OI.
-<br>
-Donc il existe un cercle de centre O passant par les trois sommets du triangle ABD
+  Si l'un des côtés d'un triangle est un diamètre de son cercle circonscrit, alors ce triangle est rectangle.
+  <br>
+  Le diamètre du cercle circonscrit est alors son hypoténuse.
 </p>
 
+<center ><img  style = "width : 35%;padding-bottom: 2%;" src="image-resources/imgindex.png"> </center>
+<div id = "contenu">
+<div id ="gauche" > <p>Démonstration</p>
 
+$\begin{align*}
+&La\ somme\ des\ angles\ dans\ un\ triangle\ est\ égale\ à\ 180º\ donc\ :\\
+\\
+&180º =\widehat{BDC} \ +\ \widehat{DCB} \ +\widehat{CBD} \ \\
+\\
+&A,\ B\ et\ D\ sont\ des\ points\ du\ cercle\ \mathcal{A} \ de\ centre\ O\ donc\ OD=OA\ =\ OB,\\
+&donc\ les\ triangles\ ODC\ et\ OCB\ sont\ tous\ les\ deux\ isocèles\ en\ O.\\
+&Donc\ \widehat{ODC} \ \ =\ \widehat{DCO\ } \ =\alpha ,\ et\ \ \widehat{OCB} =\widehat{CBO} =\beta \ .\\
+&Or\ :\ \ \ \widehat{DCB} =\widehat{DCO\ } \ +\ \widehat{OCB}\\
+&Donc\ \ \widehat{DCB} =\alpha +\beta \\
+\\
+&De\ plus\ \widehat{BDC} \ \ =\widehat{ODC} \ =\alpha \ car\ les\ points\ D\ O\ et\ B\ sont\ alignés\ dans\ cet\ ordre.\\
+&De\ même\ \widehat{CBD} \ =\ \widehat{CBO} \ =\beta \\
+&Donc\ 180º =\alpha \ +\ \alpha +\ \beta \ +\ \beta \\
+&\Longrightarrow 180º =2*\alpha +2*\beta  \\
+&\Longrightarrow 180º =2*( \alpha +\beta ) \ \\
+&\Longrightarrow \frac{180º }{2} =\frac{2*( \alpha +\beta ) \ }{2}\\
+\\
+&\Longrightarrow 90º =\alpha +\beta \\
+&\Longrightarrow 90º=\widehat{DCB}\\
+&Donc\ le\ triangle\ DBC\ est\ rectangle\ en\ C
+\end{align*}$   
 
-<div>
-<div style= "padding-left: 2%;  float:left">
-	<font size="6" face="verdana" color="blue">
-		<a href=index.html style = "color:violet;">Précédent</a>
-  </font>
 </div>
 
 
-<div style=" padding-right: 2%;  float:right">
-	<font size="6" face="verdana" color="blue">
-		<a href=suite2.html style = "color:violet;">Suite</a>
-  </font>
-</div>
+<div id = "droite" ><iframe style="width: 500px; height: 400px;"  src ="../geogebra-export.html"   >
+</iframe></div>
 
 </div>
+
+
+<div id= "contenuPrecSuiv">
+  <div id="precedent">  
+      <a href=index.html style = "color:violet;">Précédent</a>
+  </div>
+  <div id="suivant">
+    <a href=suite2.html style = "color:violet;">Suivant</a>
+</div>
+  </div>
+
+
+
 </body>
 </html>

@@ -1,86 +1,62 @@
-<!DOCTYPE html>
+<!doctype html><html style="overflow:auto;height:auto;width:auto;">
+<head><title>TriRectEtCercle2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="general.css" /> 
+<link rel="stylesheet" href="precedentSuivant.css" />
 
-<html>
+</head>
 
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="general.css" />
-        <link rel="stylesheet" href="gaucheDroite.css" />
+<body>
 
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-          </script>        
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
-   </head>
+  <h1>
+    Triangle rectangle et cercle circonscrit
+  </h1>
+  
+  <h2>
+    À savoir
+  </h2>
+  <p>
+    La somme des angles d'un triangle est de 180º
+  </p>
+  
+  
+    <p >
+      La distance euclidienne entre deux points 
+      $$\begin{align*}
+      &A(x_A,y_A) et B(x_B,y_B) est\ ( x_{B} -x_{A})^{2} \ +\ ( y_{B} -y_{A})^{2})
+     \end{align*}$$    
+  </p>
+  </h2>
+  
 
-    <body>
-<h1>
-  Triangle rectangle et cercle circonscrit
-</h1>
+<h2>Théorème direct</h2> 
+ 
+<p> Si un triangle est rectangle, alors son hypoténuse est un diamètre de son cercle circonscrit.</p>
 
-<h2>
-  A savoir
-</h2>
+
+ 
+<center><img style = "width : 50%; padding : 2% ;" src="image-resources/suite1.png"> </center>
+
 <p>
-  La somme des angles d'un triangle est de 180º
-</p>
-
-
-  <p >
-    La distance euclidienne entre deux points 
-    $$\begin{align*}
-    &A(x_A,y_A) et B(x_B,y_B) est\ ( x_{B} -x_{A})^{2} \ +\ ( y_{B} -y_{A})^{2})
-   \end{align*}$$    
-</p>
-</h2>
-
-<h2>
-  Théorème
-</h2>
-<p>Soient un cercle de centre O et de rayon r , DB un diamètre de ce cercle, et C un point appartenant à ce cercle, alors le triangle DBC est rectangle en C</p>
-
-<center ><img  style = "width : 35%" src="image-resources/imgindex.png"> </center>
-<div id = "contenu">
-<div id ="gauche" > Démonstration
-<p style="float: left;">
-$$\begin{align*}
-&La\ somme\ des\ angles\ dans\ un\ triangle\ est\ égale\ à\ 180º\ donc\ :\\
-\\
-&180º =\widehat{BDC} \ +\ \widehat{DCB} \ +\widehat{CBD} \ \\
-\\
-&A,\ B\ et\ D\ sont\ des\ points\ du\ cercle\ \mathcal{A} \ de\ centre\ O\ donc\ OD=OA\ =\ OB,\\
-&donc\ les\ triangles\ ODC\ et\ OCB\ sont\ tous\ les\ deux\ isocèles\ en\ O.\\
-&Donc\ \widehat{ODC} \ \ =\ \widehat{DCO\ } \ =\alpha ,\ et\ \ \widehat{OCB} =\widehat{CBO} =\beta \ .\\
-&Or\ :\ \ \ \widehat{DCB} =\widehat{DCO\ } \ +\ \widehat{OCB}\\
-&Donc\ \ \widehat{DCB} =\alpha +\beta \\
-\\
-&De\ plus\ \widehat{BDC} \ \ =\widehat{ODC} \ =\alpha \ car\ les\ points\ D\ O\ et\ B\ sont\ alignés\ dans\ cet\ ordre.\\
-&De\ même\ \widehat{CBD} \ =\ \widehat{CBO} \ =\beta \\
-&Donc\ 180º =\alpha \ +\ \alpha +\ \beta \ +\ \beta \\
-&\Longrightarrow 180º =2*\alpha +2*\beta  \\
-&\Longrightarrow 180º =2*( \alpha +\beta ) \ \\
-&\Longrightarrow \frac{180º }{2} =\frac{2*( \alpha +\beta ) \ }{2}\\
-\\
-&\Longrightarrow 90º =\alpha +\beta \\
-&\Longrightarrow 90º=\widehat{DCB}\\
-&Donc\ le\ triangle\ DBC\ est\ rectangle\ en\ C
-\end{align*}$$    
-</p>
-</div>
-
-
-<div id = "droite" ><iframe style="width: 500px; height: 400px;"  src ="../geogebra-export.html"   >
-</iframe></div>
-
-</div>
+Le triangle ABD est rectangle en A, et le triangle IBD est rectangle en I.
 <br>
-
-<p style="text-align: right; width:89%;  display: inline-block;">
-	<font size="6" face="verdana" color="blue">
-		<a href=suite1.html style = "color:violet;">Suite</a>
-  </font>
+Donc ABID est un rectangle.
+<br>
+Donc les diagonales[DB] et [AI] se coupent en leur milieu O.
+<br>
+Donc OD = OA = OB = OI.
+<br>
+Donc il existe un cercle de centre O passant par les trois sommets du triangle ABD
 </p>
 
 
+
+
+<div id= "contenuPrecSuiv">
+  <div id="suivant">
+      <a href=suite1.html style = "color:violet;">Suivant</a>
+    </font>
+  </div>
+  </div>
 </body>
 </html>
